@@ -14,7 +14,7 @@
     Exercício 4 - Verificação de Acesso:
     Pergunte ao usuário se ele é maior de idade (booleano). Se ele for maior de idade, pergunte se ele possui autorização dos pais (booleano). Com base nas respostas, determine se o usuário tem acesso ao conteúdo restrito.
   
-    Exercício 6 - Verificação de Números Primos:
+    Exercício 5 - Verificação de Números Primos:
     Peça ao usuário que insira um número inteiro (int) e verifique se ele é um número primo. Use um booleano para indicar se o número é primo ou não.
 */
 
