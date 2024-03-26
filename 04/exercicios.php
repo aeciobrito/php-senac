@@ -18,4 +18,54 @@
     Peça ao usuário que insira um número inteiro (int) e verifique se ele é um número primo. Use um booleano para indicar se o número é primo ou não.
 */
 
+# 1 - IMC
+$altura = 1.82;
+$peso = 83.0;
+
+$imc = $peso / ($altura * $altura);
+echo "Seu IMC é: $imc <br>";
+
+if ($imc < 18.5) {
+    echo "Você está abaixo do peso. <br>";
+} elseif ($imc >= 18.5 && $imc < 25) {
+    echo "Seu peso está normal. <br>";
+} elseif ($imc >= 25 && $imc < 30) {
+    echo "Você está com sobrepeso. <br>";
+} else {
+    echo "Você está obeso. <br>";
+}
+
+# 2 - Verificação de Pagamento
+$tem_saldo = true;
+if($tem_saldo) {
+    $fazer_compra = true;
+    if($fazer_compra) {
+        $saldo_dispoivel = 500.0;
+        $valor_compra = 350.0;
+        if($valor_compra <= $saldo_dispoivel) {
+            echo " Transação concluída com sucesso. <br>";
+        } else {
+            echo " Saldo insuficiente para essa compra. <br>";
+        }
+    } else {
+        echo "Não deseja comprar";
+    }
+} else {
+    echo "Não tem saldo";
+}
+
+# 3 - Conversor de Temperatura
+$temperatura_celsius = 20.0;
+$temperatura_fahrenheit = ($temperatura_celsius * 9 /5) + 32;
+echo "A temperatura $temperatura_celsius º em Fahrenheit é: $temperatura_fahrenheit F <br>";
+
+# 4 - Verificação de Acesso
+$maior_idade = false;
+$autorizacao_pais = true;
+
+if($maior_idade || $autorizacao_pais) {
+    echo "Acesso concedido ao conteúdo restrito. <br>";
+} else {
+    echo "Acesso negado ao conteúdo restrito. <br>";
+}
 ?>
