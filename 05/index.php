@@ -18,10 +18,37 @@ $alunos["Maria"] = 21;
 
 // Adicionando Elemntos ao Array
 $frutas[] = "Abacaxi";
-$numeros = 6;
+$numeros[] = 6;
 $alunos["Ana"] = 22;
 
 // Percorrendo um Array com o foreach
+echo "Lista de Frutas: ";
+foreach($frutas as $fruta) {
+    echo $fruta . " ";
+}
+echo "<br>";
 
+echo "Lista de números: ";
+foreach($numeros as $numero) {
+    echo $numero . " ";
+}
+echo "<br>";
+
+echo "Lista de alunos: <br>";
+foreach($alunos as $nome => $idade) {
+    echo $nome . " tem " . $idade . " anos. ";
+    echo "<br>";
+}
+
+// Funções Úteis para Arrays
+echo "Número de elementos no array de frutas: " . count($frutas) . "<br>";
+echo "Índice da fruta 'Laranja' no array: " . array_search("Laranja", $frutas) . "<br>";
+echo "Última fruta do array: " . end($frutas) . "<br>";
+echo "Array de frutas antes de reverter: ";
+print_r($frutas);
+echo "<br>";
+echo "Array de frutas depois de reverter: ";
+$frutas_revertidas = array_reverse($frutas);
+print_r($frutas_revertidas);
 
 ?>
